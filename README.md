@@ -13,7 +13,7 @@ The primary goal of this project is to build models that can assist in identifyi
 * Move low growth customers.
 * Determine which variables have a high importance in predictions.
 
-## [Solution to a business problem](https://github.com/CSJoyce/HomeCreditProject/blob/main/practiceProjectModeling2.Rmd)
+## [Solution to a business problem]([https://github.com/CSJoyce/HomeCreditProject/blob/main/practiceProjectModeling2.Rmd](https://github.com/TommasoPascucci/IS6813-Portfolio/blob/main/Capstone.ipynb))
 The solution involves a multi-step process:
 
 Exploratory Data Analysis (EDA): Understand the data, identify patterns, and determine variable importance.
@@ -46,7 +46,7 @@ I helped with some of the data cleaning and as a group decided how we wanted to 
 Exploration included understanding feature importance and data distribution, as well as visualizing critical variables. For example, we observed age-related trends in loan default probabilities:
 ![](/images/Age.png)
 
-### [Modeling](https://github.com/TommasoPascucci/Portfolio/blob/main/practiceProjectModeling2.Rmd)
+### [Modeling]([https://github.com/TommasoPascucci/Portfolio/blob/main/practiceProjectModeling2.Rmd](https://github.com/TommasoPascucci/IS6813-Portfolio/blob/main/Capstone.ipynb))
 The modeling process involved testing multiple algorithms, with XGBoost emerging as the most effective solution. Key steps included hyperparameter tuning, managing class imbalance, and optimizing thresholds.
 
 ## Business value of the solution
