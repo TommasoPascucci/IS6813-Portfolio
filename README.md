@@ -4,14 +4,14 @@ IS 6813 Portfolio
 
 # Swire Coca Cola Capstone 
 ## Business problem summary
-The Home Credit Default Risk project aims to predict the likelihood of a client defaulting on a loan. Financial institutions face significant challenges in assessing the creditworthiness of applicants, especially when traditional tools like credit scores are unavailable. Incomplete or inaccurate information about an applicant's financial background can lead to poor decision-making, resulting in loan defaults. Defaulting loans not only cause financial loss to the company but also increase operational costs and can harm the institution's reputation. The objective of this project is to develop a predictive model to determine whether a client will default on a loan, empowering lenders to make better-informed decisions
+ The objective of this project is to develop a predictive/classification model to determine whether a customer will be high or low growth, specifically in identifying important attributes, empowering Swire to make better-informed decisions
 
 ## Project objective
-The primary goal of this project is to build a robust machine-learning model that can accurately classify clients as potential defaulters or non-defaulters. By leveraging data from the Kaggle competition, the project aims to:
+The primary goal of this project is to build models that can assist in identifying high and low growth customers. By leveraging data from the Swire team, the project aims to:
 
-* Reduce the financial risk for Home Credit.
-* Streamline the loan approval process by identifying low-risk customers.
-* Enable better financial inclusion by extending credit to applicants who are responsible but lack traditional credit profiles.
+* Identify and retain high growth potential customers.
+* Move low growth customers.
+* Determine which variables have a high importance in predictions.
 
 ## [Solution to a business problem](https://github.com/CSJoyce/HomeCreditProject/blob/main/practiceProjectModeling2.Rmd)
 The solution involves a multi-step process:
