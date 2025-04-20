@@ -42,7 +42,7 @@ I helped with some of the data cleaning and as a group decided how we wanted to 
 ![](/images/matrix.png)
 ![](/images/AUC.png)
 
-### [EDA](https://github.com/TommasoPascucci/Portfolio/blob/main/EDA.Rmd)
+### [EDA]([https://github.com/TommasoPascucci/Portfolio/blob/main/EDA.Rmd](https://github.com/TommasoPascucci/IS6813-Portfolio/blob/main/EDA.ipynb))
 Exploration included understanding feature importance and data distribution, as well as visualizing critical variables. For example, we observed age-related trends in loan default probabilities:
 ![](/images/Age.png)
 
