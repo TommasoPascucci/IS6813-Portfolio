@@ -40,7 +40,7 @@ I helped with some of the data cleaning and as a group decided how we wanted to 
 * 77% / 28% F1
 * 95% / 18% Recall
 * 65% / 68% Precision  <br />
-![](/images/matrix.png)
+![](Picture/XGboost.png)
 
 
 ### [EDA]([https://github.com/TommasoPascucci/Portfolio/blob/main/EDA.Rmd](https://github.com/TommasoPascucci/IS6813-Portfolio/blob/main/EDA.ipynb))
