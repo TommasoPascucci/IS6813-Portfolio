@@ -44,7 +44,7 @@ I helped with some of the data cleaning and as a group decided how we wanted to 
 
 ### [EDA]([https://github.com/TommasoPascucci/Portfolio/blob/main/EDA.Rmd](https://github.com/TommasoPascucci/IS6813-Portfolio/blob/main/EDA.ipynb))
 Exploration included understanding feature importance and data distribution, as well as visualizing critical variables. For example, we observed age-related trends in loan default probabilities:
-![]([/Pictures/class imbance.png)
+![](/Picture/class imbance.png)
 
 ### [Modeling]([https://github.com/TommasoPascucci/Portfolio/blob/main/practiceProjectModeling2.Rmd](https://github.com/TommasoPascucci/IS6813-Portfolio/blob/main/Capstone.ipynb))
 The modeling process involved testing multiple algorithms, with XGBoost emerging as the most effective solution. Key steps included hyperparameter tuning, managing class imbalance, and optimizing thresholds.
