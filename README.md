@@ -24,10 +24,10 @@ Feature Engineering: Create new features to enhance predictive power.
 Model Development: Test various machine learning algorithms, including Logistic Regression and XGBoost, to find the most effective model.
 Evaluation: Assess models using metrics such as accuracy, precision, recall, and F1-score to select the best-performing solution as well as finding variables which could be of high correlation to high potential customers.  <br />
 
-With the overall recommendation being to use HTE model for the overall treatment effect, though it is strongly recommended to compare these results with the other models as they showed strengths in different areas depending on whether false positives or false negatives are more or less acceptable.
+With the overall recommendation being to use HTE(Heterogeneous Treatment Effect) model specifically with a T learner for the overall treatment effect, though it is strongly recommended to compare these results with the other models as they showed strengths in different areas depending on whether false positives or false negatives are more or less acceptable.
 
 ## My contribution
-I helped with some of the data cleaning and as a group decided how we wanted to handle missing values so that we all worked on the same cleaned data set when creating the models. I focused on creating the clustering and XGBoost models. .
+I helped with some of the data cleaning (I came up with the target variable of growth from year over year as both a numeric valuae as well as a binary grothwer or not, with the intent that since we need to idntiyty wich variables are attributed to putentaily  high growth customers having a flat threshold didn't see like the best target varaible in this situation) and as a group decided how we wanted to handle missing values so that we all worked on the same cleaned data set when creating the models. I focused on creating the clustering and XGBoost models. 
 
 
 ### Clustering
