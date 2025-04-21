@@ -7,7 +7,7 @@ IS 6813 Portfolio
  The objective of this project is to develop a predictive/classification model to determine whether a customer will be high or low growth, specifically in identifying important attributes, empowering Swire to make better-informed decisions
 
 ## Project objective
-The primary goal of this project is to build models that can assist in identifying high and low growth customers. By leveraging data from the Swire team, the project aims to:
+The primary goal of this project is to build models that can assist in identifying high and low growth customers with 2 distinct groups, first is the full data set and the second being the local market partners with fountain only and no CO2. By leveraging data from the Swire team, the project aims to:
 
 * Identify and retain high growth potential customers.
 * Move low growth customers.
@@ -28,25 +28,26 @@ With the overall recommendation being to use the the forest model for overall pr
 I helped with some of the data cleaning and as a group decided how we wanted to handle missing values so that we all worked on the same cleaned data set when creating the models. I focused on creating the logistic regression and XGBoost models. The XGboost was the one that achieved our best Kaggle score of 0.69889.
 
 
-### Logistic Regression
-* 91.93% Accuracy
-* 2.09% F1
-* 50% Recall
-* 1.07% Precision
-* 
-### XGBoost model
-* 91.98% Accuracy
-* 95.81% / 4.34% F1
-* 99.86% / 2.26% Recall
-* 92.08% / 58.03% Precision  <br />
-![](/images/matrix.png)
+### Clustering
+* 66% Accuracy
+* 77% F1
+* 98% Recall
+* 65% Precision
 ![](/images/AUC.png)
+  
+### XGBoost model (local market partners)
+* 65.62% Accuracy
+* 77% / 28% F1
+* 95% / 18% Recall
+* 65% / 68% Precision  <br />
+![](/images/matrix.png)
+
 
 ### [EDA]([https://github.com/TommasoPascucci/Portfolio/blob/main/EDA.Rmd](https://github.com/TommasoPascucci/IS6813-Portfolio/blob/main/EDA.ipynb))
 Exploration included understanding feature importance and data distribution, as well as visualizing critical variables. For example, we observed Specific trade channels such as Fast Casual Dining seem to be correlated more with high growth:
 ![](Picture/tradechannel.png)
 We can also observe that there is a very large class imbalance between high and low growth as well as a big range in values between the 2 groups, which needs to be kept in mind when building models and interpreting outputs.
-![](Picture/class imbance.png)
+![](Picture/classimbance.png)
 
 ### [Modeling]([https://github.com/TommasoPascucci/Portfolio/blob/main/practiceProjectModeling2.Rmd](https://github.com/TommasoPascucci/IS6813-Portfolio/blob/main/Capstone.ipynb))
 The modeling process involved testing multiple algorithms, with XGBoost emerging as the most effective solution. Key steps included hyperparameter tuning, managing class imbalance, and optimizing thresholds.
@@ -62,7 +63,7 @@ The predictive model developed through this project offers significant business 
 ## Difficulties
 The project encountered several challenges, including:
 
-* Data Cleaning: Handling a large dataset with missing values and outliers required careful preprocessing.
+* Data Cleaning: Handling a large dataset with some missing values and outliers required careful preprocessing.
 * Class Imbalance: The dataset was highly imbalanced, with far fewer default cases compared to non-defaults.
 * Feature Importance: Identifying which features had the most predictive value was crucial for model performance.
 
