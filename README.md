@@ -4,6 +4,7 @@ IS 6813 Portfolio
 
 # Swire Coca Cola Capstone 
 ## Business problem summary
+Swire Coca Cola is one of the largest coca cola packers and distributors. Their business model is utilizing either red or white trucks, with white trucks being a third distributor and red trucks being their own fleet. 
  The objective of this project is to develop a predictive/classification model to determine whether a customer will be high or low growth, specifically in identifying important attributes, empowering Swire to make better-informed decisions
 
 ## Project objective
@@ -29,11 +30,14 @@ I helped with some of the data cleaning and as a group decided how we wanted to 
 
 
 ### Clustering
-* 66% Accuracy
-* 77% F1
-* 98% Recall
-* 65% Precision
-![](/images/AUC.png)
+Cluster 2 & 3 are smaller customers with higher growth potential — may warrant nurturing <br />
+Cluster 2
+* Low volume (≈ 730)
+* Very high percent change (+63% mean) but median is slightly negative,  likely driven by big swings in a few cases. Suggests this group includes volatile or fast growing small customers <br />
+Cluster  3
+* Low volume (≈ 733)
+* Moderate growth (+24% mean, -4.2% median). Similar to Cluster 2 but with less extreme growth  growing small accounts, or maybe rebounding ones
+![](Picture/Clustering.png)
   
 ### XGBoost model (local market partners)
 * 65.62% Accuracy
@@ -55,10 +59,9 @@ The modeling process involved testing multiple algorithms, with XGBoost emerging
 ## Business value of the solution
 The predictive model developed through this project offers significant business value:
 
-* Enhanced Risk Management: Improved loan approval decisions, reducing the likelihood of defaults.
-* Increased Profitability: By identifying responsible borrowers, Home Credit can extend more loans with reduced risk.
-* Operational Efficiency: Automated predictions streamline the approval process, reducing time and costs.
-* Financial Inclusion: Offers opportunities for credit to individuals who may lack traditional credit histories.
+* Identify and retain high growth potential customers.
+* Move low growth customers.
+* Determine which variables have a high importance in predictions.
 
 ## Difficulties
 The project encountered several challenges, including:
