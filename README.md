@@ -46,7 +46,7 @@ I helped with some of the data cleaning and as a group decided how we wanted to 
 Exploration included understanding feature importance and data distribution, as well as visualizing critical variables. For example, we observed Specific trade channels such as Fast Casual Dining seem to be correlated more with high growth:
 ![](Picture/tradechannel.png)
 We can also observe that there is a very large class imbalance between high and low growth as well as a big range in values between the 2 groups, which needs to be kept in mind when building models and interpreting outputs.
-![](/Picture/class imbance.png)
+![](Picture/class imbance.png)
 
 ### [Modeling]([https://github.com/TommasoPascucci/Portfolio/blob/main/practiceProjectModeling2.Rmd](https://github.com/TommasoPascucci/IS6813-Portfolio/blob/main/Capstone.ipynb))
 The modeling process involved testing multiple algorithms, with XGBoost emerging as the most effective solution. Key steps included hyperparameter tuning, managing class imbalance, and optimizing thresholds.
