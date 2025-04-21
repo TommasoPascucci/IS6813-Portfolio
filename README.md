@@ -4,7 +4,8 @@ IS 6813 Portfolio
 
 # Swire Coca Cola Capstone 
 ## Business problem summary
-Swire Coca Cola is one of the largest coca cola packers and distributors. Their business model is utilizing either red or white trucks, with white trucks being a third distributor and red trucks being their own fleet. 
+Swire Coca Cola is one of the largest coca cola packers and distributors. Their business model is utilizing either red or white trucks, with white trucks being a third distributor and red trucks being their own fleet.
+SCCU plans to optimize logistics by transitioning customers selling below a specific annual volume to an Alternate Route to Market (ARTM) or white truck delivery. This is intended to reduce delivery costs and improve operational efficiency. However, this approach poses a risk: some customers on the ARTM list may have the potential to exceed this volume threshold (and become very high volume Customers) through the organic growth of their business, or with active support from SCCU. Moving these growth-ready, or high-growth-potential customers to ARTM prematurely could hinder SCCU revenue growth and long-term business opportunities, as we do not have the same level of contact with Customers using ARTM.
  The objective of this project is to develop a predictive/classification model to determine whether a customer will be high or low growth, specifically in identifying important attributes, empowering Swire to make better-informed decisions
 
 ## Project objective
@@ -21,12 +22,12 @@ Exploratory Data Analysis (EDA): Understand the data, identify patterns, and det
 Data Cleaning: Handle missing values, remove outliers, and preprocess data for model training.
 Feature Engineering: Create new features to enhance predictive power.
 Model Development: Test various machine learning algorithms, including Logistic Regression and XGBoost, to find the most effective model.
-Evaluation: Assess models using metrics such as accuracy, precision, recall, F1-score, and AUC to select the best-performing solution.  <br />
+Evaluation: Assess models using metrics such as accuracy, precision, recall, and F1-score to select the best-performing solution as well as finding variables which could be of high correlation to high potential customers.  <br />
 
 With the overall recommendation being to use HTE model for the overall treatment effect, though it is strongly recommended to compare these results with the other models as they showed strengths in different areas depending on whether false positives or false negatives are more or less acceptable.
 
 ## My contribution
-I helped with some of the data cleaning and as a group decided how we wanted to handle missing values so that we all worked on the same cleaned data set when creating the models. I focused on creating the logistic regression and XGBoost models. The XGboost was the one that achieved our best Kaggle score of 0.69889.
+I helped with some of the data cleaning and as a group decided how we wanted to handle missing values so that we all worked on the same cleaned data set when creating the models. I focused on creating the clustering and XGBoost models. .
 
 
 ### Clustering
@@ -54,7 +55,7 @@ We can also observe that there is a very large class imbalance between high and 
 ![](Picture/classimbance.png)
 
 ### [Modeling]([https://github.com/TommasoPascucci/Portfolio/blob/main/practiceProjectModeling2.Rmd](https://github.com/TommasoPascucci/IS6813-Portfolio/blob/main/Capstone.ipynb))
-The modeling process involved testing multiple algorithms, with XGBoost emerging as the most effective solution. Key steps included hyperparameter tuning, managing class imbalance, and optimizing thresholds.
+The modeling process involved testing multiple algorithms, with XGBoost emerging as the most effective solution in my notebook. Key steps included hyperparameter tuning, managing class imbalance, and optimizing thresholds.
 
 ## Business value of the solution
 The predictive model developed through this project offers significant business value:
@@ -70,9 +71,14 @@ The project encountered several challenges, including:
 * Class Imbalance: The dataset was highly imbalanced, with far fewer default cases compared to non-defaults.
 * Feature Importance: Identifying which features had the most predictive value was crucial for model performance.
 
+over all the biggest difficulty was being able to select a good target variable for use to be able to conduct an analysis and ensure that the data is cleaned in a usable format. 
+The next biggest challenge which we faced was being able to produce models that could identify key variables which could be of use in predicting which attributes care correlated to customers that would have a high growth potential. This required us to try lates of models and have to rework several with different layouts of data and different thresholds to be able to get a usable output.
+
 ## Learnings
 This project reinforced the importance of:
 
 * Spending significant time upfront on data cleaning and preprocessing, which simplifies downstream modeling efforts.
 * Exploring and engineering features to maximize model performance.
 * Allocating sufficient time for hyperparameter tuning to achieve the best results.
+
+
